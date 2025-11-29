@@ -133,22 +133,6 @@ class LPSolver:
 
         return objective.Value(), non_zero_edges
     
-
-# if __name__ == "__main__":
-#     lp = LPSolver()
-#     n = 5
-#     for i in range(1, n+1):
-#         lp.add_node(i)
-#     edges = [(1,2),(1,3),(2,3),(2,4),(3,4),(4,5)]
-#     costs = [1,2,2,1,3,1]
-#     for i in range(len(edges)):
-#         lp.add_edge(edges[i][0], edges[i][1], costs[i])
-#     lp.set_bound(1, 2)
-#     lp.set_bound(2, 2)
-#     lp.set_bound(3, 2)
-#     lp.set_bound(4, 2)
-#     lp.set_bound(5, 1)
-#     print(lp.solve())
         
 if __name__ == "__main__":
     lp = LPSolver()

@@ -96,25 +96,6 @@ class LPSolver:
 
         # bfs tree, towards root (includes all edges)
         root = 0
-        # incoming = [[] for _ in range(n)]
-        # outgoing = [[] for _ in range(n)]
-        # queue = [root]
-        # visited = [False]*n
-        # visited[root] = True
-        # while queue:
-        #     u = queue.pop(0)
-        #     for v in adj[u]:
-        #         ei = edge_index[(u,v)] if (u,v) in edge_index else edge_index[(v,u)]
-        #         if not visited[v]:
-        #             visited[v] = True
-        #             incoming[u].append(ei)
-        #             outgoing[v].append(ei)
-        #             queue.append(v)
-        #         else:
-        #             if ei not in outgoing[v] and ei not in incoming[v]:
-        #                 outgoing[v].append(ei)
-        #                 incoming[u].append(ei)
-
         # printing
         print("vertices:", V)
         print("edges:", E)
